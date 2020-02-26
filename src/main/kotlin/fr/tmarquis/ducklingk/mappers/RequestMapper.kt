@@ -8,6 +8,10 @@ import org.springframework.stereotype.Service
 class RequestMapper() {
 
     fun mapToContent(request: Request) : RequestContent {
-        return RequestContent()
+        return RequestContent(
+                dimensionName = "qf",
+                locale = "fr",
+                latent = false,
+                timeZone = "hfr")
     }
 }

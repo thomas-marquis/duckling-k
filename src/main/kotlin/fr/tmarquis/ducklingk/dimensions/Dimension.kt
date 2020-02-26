@@ -1,3 +1,7 @@
 package fr.tmarquis.ducklingk.dimensions
 
-abstract class Dimension
+import fr.tmarquis.ducklingk.models.Rule
+
+abstract class Dimension {
+    open fun getRulesFromLang(langCode: String): List<Rule> = emptyList()
+}
